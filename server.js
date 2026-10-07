@@ -8,7 +8,7 @@ import http from 'http'
 const server = http.createServer(app);
 import { Server } from 'socket.io'
 
-import socketInit from './sockets/jogoSocket.js';
+import socketInit from './sockets/socket.js';
 
 const io = new Server(server);
 
@@ -19,6 +19,6 @@ app.use(express.json());
 
 app.use(express.static(__dirname + '/public'));
 
-server.listen('5000', function() {
+server.listen('5000', function () {
     console.log('backend em execução');
 })
