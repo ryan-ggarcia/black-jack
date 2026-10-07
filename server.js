@@ -19,6 +19,10 @@ app.use(express.json());
 
 app.use(express.static(__dirname + '/public'));
 
+app.get('/', (req, res) => {
+    res.send('<h1>Socket funcionando</h1>')
+})
+
 server.listen('5000', function () {
     console.log('backend em execução');
 })
