@@ -1,4 +1,4 @@
-# FIPP21 — Blackjack Multiplayer
+# jack dos cria — Blackjack Multiplayer
 
 Solução fullstack para uma plataforma de jogo multiplayer de **21 (Blackjack)**, com **Next/React** no frontend e **Node/Express** no backend.
 
