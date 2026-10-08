@@ -3,11 +3,16 @@
     "express": "^4.22.3",
     "jsonwebtoken": "^9.0.3",
     "mysql2": "^3.24.5",
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "socket.io": "^4.7.4"
   },
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --es-module-specifier-resolution=node server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start:web": "next start",
+    "start:": "node server.js"
   },
   "name": "pfs2",
   "version": "1.0.0",
