@@ -8,6 +8,7 @@ import socketInit from './sockets/socket.js';
 import swaggerUi from 'swagger-ui-express';
 import swaggerDocument from './swagger.js';
 import usuarioRoute from './routes/usuarioRoute.js';
+import salaRoute from './routes/salaRouter.js';
 
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
@@ -25,6 +26,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use('/usuarios', usuarioRoute);
+app.use('/salas', salaRoute);
 
 app.get('/', (req, res) => {
     res.send('<h1>Socket funcionando</h1>')
