@@ -42,4 +42,12 @@ export default class Sala {
 
         return true;
     }
+
+    toJSON() {
+        return { id: this.#id, nome: this.#nome, usuarioId: this.#usuarioId };
+    }
+
+    static toMap(row) {
+        return new Sala(row.sal_id, row.sal_nome, row.usu_id);
+    }
 }
